@@ -19,3 +19,25 @@ Complex:
 3. Implement a program to rotate the elements of an array to the right by a given number of positions. For example, if the array is [1, 2, 3, 4, 5] and the rotation is 2 positions, the resulting array would be [4, 5, 1, 2, 3].
 
 4. Write a program to find the intersection of two arrays. The intersection should contain only unique elements that are present in both arrays, and the program should return the intersection as a new array.
+
+> Array -> array of palindrome strings -> check if palindrome or not
+ex: ["mom", "dad", "racecar", "bat"] -> [true, true, true, false]
+
+5. Transpose a matrix (rows and columns are swapped)
+ex: [[1,2,3], [4,5,6], [7,8,9]] -> [[1,4,7], [2,5,8], [3,6,9]]
+
+1 2 3
+4 5 6
+7 8 9
+
+1 4 7
+2 5 8
+3 6 9
+
+String class -> toCharArray() -> char[]
+
+name = "John"
+
+name[0] = 'J'   -> it's not an array but we can treat it like one
+
+name.toCharArray() -> ['J', 'o', 'h', 'n']
