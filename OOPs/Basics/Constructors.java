@@ -1,10 +1,6 @@
-class Animal {
-    private Animal() {
-        System.out.println("Animal is created");
-    }
-
-    public Animal(int a) {
-        System.out.println("Animal is created");
+class Adder {
+    Adder(int a, int b) {
+        System.out.println("Addition is " + (a + b));
     }
 }
 
@@ -15,9 +11,9 @@ public class Constructors {
 
     //Methods
     // Default Constructor
-    private Constructors() {
-        name = "Rahul";
-        city = "Delhi";
+    Constructors(String n, String c) {
+        name = n;
+        city = c;
         System.out.println("Constructor called");
     }
 
@@ -27,12 +23,12 @@ public class Constructors {
     }
 
     public static void main(String[] args) {
-        Constructors obj = new Constructors();
+        Constructors obj = new Constructors("Yash", "Pune");
         
         System.out.println("Name is: " + obj.name);
         System.out.println("City is: " + obj.city);
 
-        Animal a = new Animal(2);    
+        Adder add = new Adder(10, 20);
     }
 }
 
@@ -66,4 +62,22 @@ You are developing a system to track student attendance in a school. Implement a
 
 5. Car Rental System:
 Design a "Car" class to represent cars available for rent in a car rental system. The class should have attributes like car brand, model, year, and rental status. The default constructor initializes the car with default values like "Unknown" for brand and model, year set to the current year, and rental status as "Available." Create an object of the "Car" class using the default constructor and display its details.
+
+Task (Parameterized Constructor):
+
+Problem 1: Employee Information
+Create a Java class "Employee" with private data members such as empId (int), empName (String), empSalary (double), and empDesignation (String). Implement a parameterized constructor to initialize these data members. Also, provide methods to display the employee details.
+
+Problem 2: Bank Account Management
+Develop a Java class "BankAccount" with private data members like accNumber (String), accHolderName (String), balance (double), and accType (String). Implement a parameterized constructor to set these values and include methods to deposit, withdraw, and display the account details.
+
+Problem 3: Book Information
+Design a Java class "Book" with private data members bookId (int), bookTitle (String), author (String), and price (double). Create a parameterized constructor to initialize these attributes and provide a method to display the book information.
+
+Problem 4: Circle Geometry
+Write a Java class "Circle" to represent a circle with private data members such as radius (double) and area (double). Implement a parameterized constructor to initialize the radius and calculate the area. Include a method to display the circle's area.
+
+Problem 5: Student Grades
+Create a Java class "Student" with private data members like rollNumber (int), name (String), subject1Marks (int), subject2Marks (int), subject3Marks (int), and totalMarks (int). Implement a parameterized constructor to initialize the roll number, name, and subject marks. Add a method to calculate the total marks and display the student's details along with the total marks.
+
 */
