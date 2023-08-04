@@ -1,0 +1,31 @@
+Inheritance in Java: 
+
+In java, Inheritance is a mechanism in which one object acquires all the properties and behaviors of parent object. It is an important part of OOPs (Object Oriented programming system).
+
+The idea behind inheritance in java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of parent class, and you can add new methods and fields also.
+
+Inheritance represents the IS-A relationship, also known as parent-child relationship.
+
+> In order to inherit a class we use extends keyword.
+
+Types of Inheritance in Java:
+    1. Single Inheritance
+    2. Multilevel Inheritance
+    3. Hierarchical Inheritance
+    4. Multiple Inheritance (Through Interface)
+    5. Hybrid Inheritance (Through Interface)
+
+1. Single Inheritance:
+    When a class inherits only a single class, it is called single inheritance. In the example given below, class B inherits the class A, so there is the single inheritance.
+
+2. Multilevel Inheritance:
+    When a class inherits a class which is further inherited by another class, it is called multilevel inheritance. In the example given below, class C inherits the class B, so there is the multilevel inheritance.
+
+3. Hierarchical Inheritance:
+    When a class has more than one child classes (subclasses) or in other words, more than one child classes have the same parent class, it is called hierarchical inheritance. In the example given below, class B and class C inherits the class A, so there is the hierarchical inheritance.
+
+4. Multiple Inheritance (Through Interface): 
+    When a class gets inherited by two ro more classes than it is called multiple inheritance. In the example given below, class B inherits the class A and class C, so there is the multiple inheritance.
+
+5. Hybrid Inheritance (Through Interface):
+    When two or more inheritance types are used or put together we can call it as Hybrid Inheritance.
