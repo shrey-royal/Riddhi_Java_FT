@@ -1,0 +1,11 @@
+Acccess Specifiers: public, private, protected, default
+> used to restrict access to the class members
+
+public: accessible everywhere
+private: accessible only within the class
+protected: accessible to inherited classes and same package
+default: accessible within the class and same package
+
+> Note: private members can be accessed using public methods
+
+Package: collection of related classes and interfaces
