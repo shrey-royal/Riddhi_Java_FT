@@ -1,0 +1,19 @@
+The life cycle of a thread in Java can be divided into five states:
+
+1. New: When a new thread is created, it is in the new state. The thread has not yet started to execute.
+
+2. Runnable: When a thread is in the runnable state, it means that the thread has been started and is ready to run. However, it may not be currently running because the CPU may be executing another thread.
+
+3. Running: When a thread is in the running state, it means that the thread is currently being executed by the CPU.
+
+4. Blocked: When a thread is in the blocked state, it means that the thread is waiting for a monitor lock to be released so that it can enter the runnable state again.
+
+5. Terminated: When a thread is in the terminated state, it means that the thread has completed its execution and has exited.
+
+It's important to note that a thread can only be started once. Once a thread has completed its execution and has exited, it cannot be restarted. If you want to run the same code again, you will need to create a new thread.
+
+1. New : new
+2. Active : runnable / running (call start method / run method)
+3. Blocked / Waiting : wait (infinitely) / join (infinitely)
+4. Timed Waiting : sleep (milliseconds) / wait (milliseconds) / join (milliseconds)
+5. Terminated : dead (run method ends)
