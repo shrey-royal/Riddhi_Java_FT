@@ -19,6 +19,7 @@ public class Threads {
             t.setName("Thread-" + i);  //Thread-0, Thread-1, Thread-2, Thread-3, Thread-4
 
             t.start();
+            t.run();
         }
 
         Set<Thread> tset = Thread.getAllStackTraces().keySet();
