@@ -1,12 +1,14 @@
 
 class Table {
-    synchronized void printTable(int n) {   //synchronized method
-        for(int i=1; i<=10; i++) {
-            System.out.println(n + " * " + i + " = " + n*i);
-            try {
-                Thread.sleep(500);
-            } catch (Exception e) {
-                System.out.println(e);
+    void printTable(int n) {
+        synchronized(this) {    // Synchronized block
+            for(int i=1; i<=10; i++) {
+                System.out.println(n + " * " + i + " = " + n*i);
+                try {
+                    Thread.sleep(500);
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
             }
         }
     }
@@ -34,7 +36,7 @@ class MyThread2 extends Thread {
     }
 }
 
-public class syncMethod {
+public class SyncBlock {
     public static void main(String[] args) {
         Table obj = new Table();
 
@@ -45,14 +47,3 @@ public class syncMethod {
         t2.start();
     }
 }
-
-/*
-Syncronization in Java is the capability to control the access of multiple threads to any shared resource.
-
-it is done using the keyword "synchronized" in java.
-
-1. synchronized method
-2. synchronized block
-3. static synchronization
-
-*/
