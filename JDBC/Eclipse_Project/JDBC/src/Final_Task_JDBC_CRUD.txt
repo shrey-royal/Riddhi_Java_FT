@@ -1,0 +1,53 @@
+SQL queries for your table definition along with some common CRUD (Create, Read, Update, Delete) operations that you can perform on this table.
+
+**1. Create the table:**
+
+```sql
+CREATE TABLE IF NOT EXISTS pizza_lovers (
+    person_id INT AUTO_INCREMENT PRIMARY KEY,
+    pizza_lover_name VARCHAR(50) NOT NULL,
+    favorite_topping VARCHAR(50),
+    topping_confidence INT,
+    unusual_combination TINYINT(1)
+);
+```
+
+This query creates a table named `pizza_lovers` with the specified columns.
+
+**2. Insert a new pizza lover:**
+
+```sql
+INSERT INTO pizza_lovers (pizza_lover_name, favorite_topping, topping_confidence, unusual_combination)
+VALUES ('John Doe', 'Pepperoni', 8, 0);
+```
+
+This query allows you to insert a new pizza lover into the table. You can replace the values with the details of the new pizza lover.
+
+**3. View all pizza lovers:**
+
+```sql
+SELECT * FROM pizza_lovers;
+```
+
+This query retrieves all pizza lovers and their details from the `pizza_lovers` table.
+
+**4. Update a pizza lover's information:**
+
+```sql
+UPDATE pizza_lovers
+SET favorite_topping = 'Mushrooms', topping_confidence = 7
+WHERE person_id = 1;
+```
+
+This query updates the `favorite_topping` and `topping_confidence` for the pizza lover with `person_id` 1. You can modify the values as needed.
+
+**5. Delete a pizza lover:**
+
+```sql
+DELETE FROM pizza_lovers
+WHERE person_id = 2;
+```
+
+This query deletes the pizza lover with `person_id` 2 from the table.
+
+These SQL queries provide basic CRUD operations for managing data in your "pizza_lovers" table. You can use them to interact with the table using your MySQL database.
